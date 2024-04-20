@@ -126,10 +126,11 @@ alternativ:     $mcRconSourcePath = ".\" + "MCRcon.exe" # <--- Pfad zur MCRcon.e
     $mcRconPassword = "<Dein Passwort>"
 #>
 # HIER RCON DATEN EINTRAGEN!
-$mcRconSourcePath = Join-Path -Path $currentPath -ChildPath "MCRcon.exe"
 $mcRconServerIP = "gameServerIP"
 $mcRconPort = "rconPort"
 $mcRconPassword = "rconPassword"
+# Pfad zu MCRcon:
+$mcRconSourcePath = Join-Path -Path $currentPath -ChildPath "MCRcon.exe"
 # Lasse den Wert auf 5 und 60 für 5 Minuten auf Restart prüfen (alle 5 Sek einen Verbindungsversuch + 60x Wiederhohlen vor Abbruch)
 $mcRconTimeWaitBetweenTests = 5
 $mcRconMaxPingAttempts = 60
@@ -137,6 +138,8 @@ $mcRconCommandSave = "save-all"
 $mcRconCommandRestart = "restart"
 $mcRconCommandTestOnline = "bukkit:version"
 $mcRconCommandTestPlugins = "plugins"
+# Downloadseite von MCRcon.exe
+$urlMCRcon = "https://github.com/Tiiffi/mcrcon/releases/latest"
 
 
 
@@ -840,6 +843,20 @@ if (-not (Test-Path $sourcePathUpdatePluginFiles) -or
     # Erster Start des Skripts oder fehlende Ordner, $debug auf $true setzen
     $debug = $true
     Write-Host "debug = on"
+}
+
+if (-not (Test-Path $mcRconSourcePath -PathType Leaf)) {
+    Write-Host "MCRcon.exe fehlt." -ForegroundColor Red
+    Write-Host "Bitte lade MCRcon von Tiiffi herunter und lege die Datei in den selben Ordner wie dieses Skript." -ForegroundColor Cyan
+    Write-Host "Speicherort: $mcRconSourcePath" -ForegroundColor Yellow
+    Write-Host "Bennene dann die Datei zu 'MCRcon.exe' um. Beachte dabei die Schreibweise." -ForegroundColor Cyan
+    Write-Host "Beim Klick auf [Enter] wird die GitHub-Downloadseite von Tiffi's MCRcon geöffnet." -ForegroundColor Cyan
+    Write-Host "$urlMCRcon" -ForegroundColor White
+    Pause
+    Start-Process $urlMCRcon
+    Write-Host "Beim nächsten Klick auf [Enter] wird das Skript beendet."  -ForegroundColor DarkYellow
+    Pause
+    Exit
 }
 
 Write-Host ""; Write-Host "Skript gestartet. Bitte warten..." -ForegroundColor Green
