@@ -34,7 +34,7 @@ It then restarts the server automatically.
 <ol>
     <li>Download the script from https://github.com/RaptorXilef/Powershell-SimpleMCServerUpdater/releases/latest </li>
     <li>Download MCRcon from https://github.com/Tiiffi/mcrcon/releases/latest </li>
-    <li>Rename the MCRcon.exe to "MCRcon.exe"</li>.
+    <li>Rename the MCRcon.exe to "MCRcon.exe"</li>
     <li>Move the script and MCRcon to the target folder.
     <li>Open the script in a code editor and enter the FTP and MCRcon login data.</li>
     <li>Run the script to test whether all login data has been entered correctly. (Display is in DEBUG mode at first start) </li>
