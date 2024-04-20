@@ -1,4 +1,4 @@
-# [DE] Powershell-SimpleMCServerUpdater
+# [DE] Powershell-SimpleMCServerUpdater (Windows)
 Dieses Skript dient zum teilautomatisierten Updaten von Minecraft-Servern (Paper, Spigot, Bukkit) und dessen Plugins.
 
 Es bereitet die im Verzeichnis enthaltenen .jar-Dateien für den Upload vor und prüft Dateiabhängigkeiten.
@@ -8,7 +8,10 @@ Im Anschluss startet es den Server Automatisch neu.
 
 <h2> Wie benutzen? </h2>
 <ol>
-    <li>Verschiebe das Skript in den Zielordner.</li>
+    <li>Downloade das Skript von https://github.com/RaptorXilef/Powershell-SimpleMCServerUpdater/releases/latest </li>
+    <li>Downloade MCRcon von https://github.com/Tiiffi/mcrcon/releases/latest </li>
+    <li>Benenne die MCRcon.exe zu "MCRcon.exe" um.</li>
+    <li>Verschiebe das Skript und MCRcon in den Zielordner.</li>
     <li>Öffne das Skript in einem Codeeditor und trage FTP- und MCRcon-Logindaten ein.</li>
     <li>Starte das Skript um zu Testen, ob alle Logindaten korrekt eingetragen wurden. (Anzeige ist beim erststart im DEBUG-Modus) </li>
     <li>Nach der (erfolgreichen) Prüfung, wirst du gefragt ob du das Skript im DEBUG-Modus fortsetzen willst.
@@ -20,7 +23,7 @@ Im Anschluss startet es den Server Automatisch neu.
 
 
 
-# [EN] Powershell-SimpleMCServerUpdater
+# [EN] Powershell-SimpleMCServerUpdater (Windows)
 This script is used for semi-automated updating of Minecraft servers (Paper, Spigot, Bukkit) and their plugins.
 
 It prepares the .jar files contained in the directory for upload and checks file dependencies.
@@ -29,7 +32,10 @@ It then restarts the server automatically.
 
 <h2> How to use it? </h2>
 <ol>
-    <li>Move the script to the target folder.</li>
+    <li>Download the script from https://github.com/RaptorXilef/Powershell-SimpleMCServerUpdater/releases/latest </li>
+    <li>Download MCRcon from https://github.com/Tiiffi/mcrcon/releases/latest </li>
+    <li>Rename the MCRcon.exe to "MCRcon.exe"</li>.
+    <li>Move the script and MCRcon to the target folder.
     <li>Open the script in a code editor and enter the FTP and MCRcon login data.</li>
     <li>Run the script to test whether all login data has been entered correctly. (Display is in DEBUG mode at first start) </li>
     <li>After the (successful) check, you will be asked if you want to continue the script in DEBUG mode.</li>
