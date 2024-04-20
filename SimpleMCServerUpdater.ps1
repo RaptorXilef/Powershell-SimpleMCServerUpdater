@@ -7,7 +7,7 @@ Im Anschluss startet es den Server Automatisch neu.
 
 .DESCRIPTION
 Dieses Skript wurde von Felix Maywald aka RaptorXilef erstellt.
-Es ist freie Software: Du kannst es frei nutzen und weitergeben unter den Bedingungen der MIT-Lizenz.
+Es ist freie Software: Du kannst es frei nutzen und weitergeben unter den Bedingungen der Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.
 Das Skript darf kostenfrei genutzt werden, darf jedoch nicht für kommerzielle Zwecke verwendet oder weiterverarbeitet werden.
 Solltest du es Komerziell nutzen wollen oder es in einer Kommerzielen Software einbinden wollen, brauchst du vorher meine Schriftliche Erlaubnis.
 
@@ -18,6 +18,7 @@ Autor: Felix Maywald; RaptorXilef
 GitHub: https://github.com/RaptorXilef/
 Erstelldatum: 07.04.2024
 Letzte Änderung: 20.04.2024
+License: SimpleMCServerUpdater © 2024 by Felix Maywald is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International 
 Version: 1.0.0
 #>
 
